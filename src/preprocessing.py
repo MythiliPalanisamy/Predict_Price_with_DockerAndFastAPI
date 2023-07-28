@@ -16,8 +16,8 @@ def preprocess(raw_dataframe):
     column=[ 'type_of_property', 'building_condition', 'kitchen_type',  'province','energy_class', 'heating_type',]
     
     # loading one hot encoding trained data and minmax scaler
-    ohe = pickle.load(open(r'C:\Users\Karthick Palanivel\Documents\GitHub\Price_prediction\models\ohe.pickle', 'rb'))
-    minmax_scaler = pickle.load(open(r'C:\Users\Karthick Palanivel\Documents\GitHub\Price_prediction\models\minmax_scaler.pickle', 'rb'))
+    ohe = pickle.load(open('./models/ohe.pickle', 'rb'))
+    minmax_scaler = pickle.load(open('./models/minmax_scaler.pickle', 'rb'))
 
     # using onehot encoder
     one_hot_encoded_array = ohe.transform(raw_dataframe[column]).toarray()
