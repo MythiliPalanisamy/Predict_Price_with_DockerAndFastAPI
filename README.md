@@ -17,10 +17,11 @@ This project @ BeCode.org as part of the AI Bootcamp in Gent.
 [![fastapi](https://img.shields.io/badge/fastapi-0.100.0-purple)](https://pypi.org/project/fastapi/)
 [![pydantic](https://img.shields.io/badge/fastapi-2.0.3-orange)](https://pypi.org/project/pydantic/)
 [![uvicorn](https://img.shields.io/badge/uvicorn-0.22.0-yellow)](https://pypi.org/project/uvicorn/)
-[![pickleshare]((https://img.shields.io/badge/pickleshare-0.7.5-green))](https://pypi.org/project/pickleshare/)
+[![pickleshare](https://img.shields.io/badge/pickleshare-0.7.5-green)](https://pypi.org/project/pickleshare/)
 
 * clone this repository
-* use `pip install <module name>` to install the required models.
+* use `pip install <module name>` to install the required models (or)
+* use `Dockerfile` to install and create new image and run a container.
 
 # Usage
 * open the terminal and redirect to where your repository is.
@@ -30,7 +31,15 @@ This project @ BeCode.org as part of the AI Bootcamp in Gent.
 
 # Docker deployment
 
-I was able to create docker image of size 1.82GB and run docker container to get the same result as my local machine. attaching dockerfile to the repository.
+I was able to create docker image of size 1.82GB and run docker container to get the same result as my local machine. attaching dockerfile to the repository. 
+
+# with Docker
+* dowload and install [docker desktop](https://www.docker.com/) in your machine.
+* open terminal and redirect to folder where your 'dockerfile' is.
+* type `docker build -t <image_name> .` to create a docker image.  (please wait for sometime to create an image)
+* type `docker run -p 8000:8000 --name <container_name> <image_name>` to create new container and run it.
+* now open `127.0.0.1:8000` to see welcome page and `127.0.0.1:8000/docs` to go to prediction page. 
+* follow the instructions in schema to enter the details to get the prediction.
 
 # Completion:
 * Name - Mythili Palanisamy
