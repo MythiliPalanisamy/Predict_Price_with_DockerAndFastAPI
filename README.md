@@ -53,7 +53,8 @@ I was able to create docker image of size 1.82GB and run docker container to get
 * now open `127.0.0.1:8000` to see welcome page and `127.0.0.1:8000/docs` to go to prediction page. 
 * follow the instructions in schema to enter the details to get the prediction.
 
-# Completion:
-* Name - Mythili Palanisamy
-* Repository - Price_prediction
-* Submission - 28/07/2023 4:00 PM
+<a name="completion"></a>
+## 🏁 Completion  
+Name - Mythili Palanisamy  
+Submission - 28/07/2023 4:00 PM  
+Team type - solo
